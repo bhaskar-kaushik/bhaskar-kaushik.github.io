@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bhaskar Kaushik — PhD Student</title>
+  <meta name="description" content="PhD student website for Bhaskar Kaushik: research, teaching, CV, and contact." />
+  <meta property="og:title" content="Bhaskar Kaushik — PhD Student" />
+  <meta property="og:description" content="Research, teaching, CV, and contact." />
+  <meta property="og:type" content="website" />
+  <meta name="color-scheme" content="light dark" />
+
+  <style>
+    :root{
+      --bg: #ffffff; --fg: #0f172a; --muted:#475569; --link:#2563eb; --card:#f8fafc; --line:#e2e8f0;
+      --accent:#0ea5e9;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#0b1020; --fg:#e6edf3; --muted:#9aa4b2; --link:#60a5fa; --card:#121a33; --line:#1f2a44; --accent:#38bdf8;
+      }
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif}
+    body{background:var(--bg);color:var(--fg); line-height:1.6}
+    a{color:var(--link); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:980px;margin:0 auto;padding:20px}
+    header{position:sticky;top:0;background:color-mix(in oklab, var(--bg), transparent 10%);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line);z-index:50}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{font-weight:700;letter-spacing:.2px}
+    .menu{display:flex;gap:18px;flex-wrap:wrap}
+    .menu a{padding:6px 8px;border-radius:8px}
+    .menu a:focus-visible, .menu a:hover{background:var(--card);text-decoration:none}
+
+    .hero{display:grid;grid-template-columns:140px 1fr;gap:24px;align-items:center;padding:32px 0}
+    .avatar{width:140px;height:140px;border-radius:16px;object-fit:cover;border:1px solid var(--line);background:var(--card)}
+    h1{font-size:28px;margin:0 0 8px}
+    .muted{color:var(--muted)}
+    .tag{display:inline-block;padding:2px 8px;border:1px solid var(--line);border-radius:999px;font-size:12px;margin-right:6px}
+
+    section{padding:28px 0;border-top:1px solid var(--line)}
+    h2{font-size:20px;margin:0 0 12px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+    .grid{display:grid;gap:16px}
+    @media (min-width: 720px){ .grid.cols-2{grid-template-columns:1fr 1fr} }
+
+    ul.clean{list-style:none;padding:0;margin:0}
+    ul.clean li{padding:10px 0;border-bottom:1px dashed var(--line)}
+    ul.clean li:last-child{border-bottom:0}
+
+    .cv-links a{display:inline-block;margin-right:10px;padding:8px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card)}
+    .footer{padding:28px 0;border-top:1px solid var(--line);font-size:14px}
+    .skip{position:absolute;left:-9999px;top:auto}
+    .skip:focus{left:12px;top:12px;background:var(--card);padding:8px 12px;border-radius:10px;border:1px solid var(--line)}
+
+    /* tiny mobile tweaks */
+    @media (max-width:640px){
+      .hero{grid-template-columns:1fr; text-align:center}
+      .avatar{margin:0 auto}
+    }
+  </style>
+
+  <!-- Structured data for a person/scholar -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Bhaskar Kaushik",
+    "affiliation":{"@type":"CollegeOrUniversity","name":"University of Oklahoma"},
+    "jobTitle":"PhD Student",
+    "url":"https://bhaskar-kaushik.github.io",
+    "sameAs":[
+      "https://scholar.google.com/","https://www.linkedin.com/"
+    ]
+  }
+  </script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <div class="container nav">
+    <div class="brand">Bhaskar Kaushik</div>
+    <nav class="menu" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="container">
+  <section class="hero" id="about">
+    <img class="avatar" src="https://avatars.githubusercontent.com/u/0?v=4" alt="Profile photo placeholder" />
+    <div>
+      <h1>Bhaskar Kaushik</h1>
+      <p class="muted">PhD Student in Finance · University of Oklahoma</p>
+      <div>
+        <span class="tag">Corporate Finance</span>
+        <span class="tag">AI & Decision-Making</span>
+        <span class="tag">Empirical Methods</span>
+      </div>
+      <p style="margin-top:10px">
+        I study how AI acts as cognitive infrastructure in firms and how it shapes corporate decisions.
+        My work combines archival data (Compustat/CRSP/EDGAR), original datasets, and econometric tools.
+      </p>
+    </div>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+    <div class="grid cols-2">
+      <div class="card">
+        <strong>Delegated Decision-Making to AI in Corporate Finance</strong><br/>
+        <span class="muted">Working paper, 2025</span>
+        <p>We model and measure how firms delegate cognitive tasks to AI systems and study effects on leverage, investment, and payouts.</p>
+        <a href="#" aria-disabled="true">PDF (coming soon)</a>
+      </div>
+      <div class="card">
+        <strong>Implicit State Prices in Dynamic Discrete Choice</strong><br/>
+        <span class="muted">Working paper, 2025</span>
+        <p>Identification and diagnostics linking CCPs and Arrow–Debreu-like weights inside the Bellman expectation.</p>
+        <a href="#" aria-disabled="true">PDF (coming soon)</a>
+      </div>
+    </div>
+
+    <h3 style="margin-top:18px">Selected notes & data</h3>
+    <ul class="clean">
+      <li><a href="#" aria-disabled="true">Replication materials (Sloan 1996) — coming soon</a></li>
+      <li><a href="#" aria-disabled="true">AI Delegation Index code — coming soon</a></li>
+    </ul>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <div class="card">
+      <p><strong>TA</strong>, Corporate Finance (OU), 2025. Office hours and problem-set clinics.</p>
+      <p>I enjoy helping students connect theory to data and build clean, reproducible workflows.</p>
+    </div>
+  </section>
+
+  <section id="cv">
+    <h2>CV</h2>
+    <p class="cv-links">
+      <a href="cv/Bhaskar_Kaushik_CV.pdf">Download CV (PDF)</a>
+      <a href="mailto:youremail@example.com">Email</a>
+      <a href="https://scholar.google.com/" target="_blank" rel="noreferrer">Google Scholar</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href="https://github.com/bhaskar-kaushik" target="_blank" rel="noreferrer">GitHub</a>
+    </p>
+    <p class="muted">Place your CV at <code>/cv/Bhaskar_Kaushik_CV.pdf</code> in the repo.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p><strong>Email:</strong> <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p><strong>Office:</strong> Price College of Business, University of Oklahoma</p>
+      <p class="muted">Always happy to talk research, data, and methods.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer container">
+  <span class="muted">© <span id="y"></span> Bhaskar Kaushik</span>
+</footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
